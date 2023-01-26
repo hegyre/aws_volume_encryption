@@ -263,7 +263,7 @@ def main(argv):
         print('---Remove original volume {}'.format(cleanup['volume'].id))
         cleanup['volume'].delete()
     
-    print('Encryption finished.')
+    print('Encryption finished. Don\'t forget to put back instance into Target Group of Load Balancer if any !!!')
 
 if __name__ == "__main__":
     main(sys.argv[1:])
