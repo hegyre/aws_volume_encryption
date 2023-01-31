@@ -34,7 +34,7 @@ def main(argv):
     if args.profile:
         # Create custom session
         print('Using profile {}'.format(args.profile))
-        session = boto3.session.Session(profile_name=args.profile)
+        session = boto3.session.Session(profile_name=args.profile, region_name=args.region)
     else:
         # Use default session
         session = boto3.session.Session()
